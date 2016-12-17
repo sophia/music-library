@@ -3,13 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      main {
+        background: #d8d8d8;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        padding: 15px 20px;
+        border-radius: 3px;
+        border: 2px solid #fff;
+        font-size: 15px;
+      }
+
+      input:focus {
+        border-color: blue;
+        outline: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <main>
+      <input type="text" placeholder="Suchen...">
+    </main>
   </body>
 
   <script>
